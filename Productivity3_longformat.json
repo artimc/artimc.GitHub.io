@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Annual GDP CVM index (2019=100)",
+    "subtitle": ["Author: Carmen", "Date: 22nd February 2024", "Source: ONS"]},
+
+  "width": 400,
+  "height": 300,
+ 
+  "data": {"url": "https://raw.githubusercontent.com/artimc/artimc.GitHub.io/main/Productivity3_longformat.csv"},
+ 
+  "mark": "line",
+ 
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":"Year"},
+    "y": {"field": "Value", "type": "quantitative", "title":null},
+    "color": {"field": "Country", "type": "nominal"}
+  }
+
+}

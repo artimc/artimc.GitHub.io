@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Egovernment use in Europe",
+    "subtitle": ["Author: Carmen", "Date: 22nd February 2024", "Source: ??"]},
+
+  "width": 400,
+  "height": 300,
+ 
+  "data": {"url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/simple/egovernment_use_in_europe.csv"},
+ 
+  "mark": "circle",
+  "transform": [{"filter": "datum['Country']=='Spain'|datum['Country']=='France'|datum['Country']=='United Kingdom'"}],
+  // "transform": [{"filter": "datum['Value']>0"}],
+  
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":"Year"},
+    "y": {"field": "Value", "type": "quantitative", "title":null},
+    "color": {"field": "Country", "type": "nominal"}
+  }
+
+}

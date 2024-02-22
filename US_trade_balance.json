@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": " Trade Balance: Goods and Services, Balance of Payments Basis",
+    "subtitle": [" Source: FRED API"
+    ]
+  },
+  "description": "A chart showing 10-Year U.S. Treasury Yields",
+  "data": {"url": "https://raw.githubusercontent.com/artimc/artimc.GitHub.io/main/data_FRED-BOPGSTB.json", "format":{"type": "json", "property": "observations"}},
+  "mark": {"type":"line",
+  "color":"#49B6FF"},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title":"Year"},
+    "y": {"field": "value", "type": "quantitative", "title":null}
+  },
+  "width": 400,
+  "height": 300
+}

@@ -19,7 +19,7 @@ body { /* We can style any HTML element by using its name - here we're styling t
     line-height: 1.6;
     /* we want a white page, that's centered and not too wide */
     /*White background was #fff*/
-    background-color: #A480CF;
+    background-color: #ebdaff;
     margin:0 auto;
     max-width: min(80vw, 1200px);
     padding-top: 60px;
@@ -28,7 +28,7 @@ body { /* We can style any HTML element by using its name - here we're styling t
   
   /* Headings */
   h1, h2, h3, h4, h5, h6 {
-    color: #333;
+    color: #779BE7;
     margin-top: 24px;
     margin-bottom: 16px;
     font-weight: 600;
@@ -37,7 +37,7 @@ body { /* We can style any HTML element by using its name - here we're styling t
   }
   
   h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-family: "Raleway", sans-serif; 
     font-weight: 500;
     font-optical-sizing: auto;
